@@ -1,0 +1,8 @@
+<form [formGroup]='addProduct' (ngSubmit)='InsertProduct()'>
+
+    Name :<input type="text" formControlName='name'> <br> <br>
+    Price : <input type="number" formControlName ='price'> <br> <br>
+
+    <input type="submit" value="Insert">
+
+</form>

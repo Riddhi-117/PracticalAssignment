@@ -1,0 +1,53 @@
+<body style="font-size: 20px;">
+
+    <p>display works!</p>
+    <div>
+        Interger : {{a}} <br><br>
+        String : {{name}} <br><br>
+        Date : {{tdate}} <br><br>
+        Date : {{transformDate}}<br><br>
+        List of Array elements method 1 :
+        <ul>
+            <li>{{ar[0]}}</li>
+            <li>{{ar[1]}}</li>
+            <li>{{ar[2]}}</li>
+            <li>{{ar[3]}}</li>
+            <li>{{ar[4]}}</li>
+        </ul>
+        List of Array elements method 2 :
+        <ol>
+            <li *ngFor= "let tamp of ar; let i=index"> {{ar[i]}}</li>
+        </ol>
+        Display Array into Combo
+        <select>
+            <option *ngFor = "let tamp of ar; let i=index">
+                {{ar[i]}}
+            </option>
+        </select>
+        <br><br>
+        <select name="cmb1" (change)="selected($event)">
+            <option value="">Select Option</option>
+            <option value="textbox">Textbox</option>
+            <option value="textarea">TextArea</option>
+        </select>
+        You select : {{selectedControl}} <br><br>
+
+        <div *ngIf="selectedControl == 'textbox'; else elseBlock">
+               textbox: <input type="text">
+        </div><br><br>
+        
+        <ng-template #elseBlock>
+            TextArea :  <textarea rows="5" cols="15"></textarea><br><br>    
+        </ng-template><br><br>
+    </div>
+
+    <form [formGroup]='frm' (ngSubmit)="showData(frm.value)" method="post">
+        Name : <input type="text" formControlName="name">
+
+        <input type="submit" value="Show">
+        </form>
+        <div>
+            You entered
+              {{fname}}
+        </div>
+</body>

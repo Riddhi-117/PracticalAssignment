@@ -1,0 +1,13 @@
+
+<form method="post" action="/students/update">
+    <input type="text" name="_id" value=<%= result._id%> hidden>
+    <br>
+Student Id:<input type="text" name="Sid" value=<%=result.Sid%> disable><br/>
+Student Name:<input type="text" name="Sname" value=<%=result.Sname%> <br/><br/>
+Gender:
+Male:<input type="radio" name="Gender" value="Male" <% if(result.Gender =='Male') {%>checked<%}%> ><br/>
+Female:<input type="radio" name="Gender" value="Female" <% if(result.Gender =='Female') {%>checked<%}%>><br/>
+City:<input type="text" name="City" value=<%=result.City%>><br/>
+<input type="submit" name="s1" value="Submit" /><br/>
+
+</form>

@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CRUD Node.js </title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<div class="pt-5">  
+    <div class="container">  
+        <div class="row">  
+            <div class="col-md-5 mx-auto">  
+            <form method="post" action="/students/update">
+                <input type="text" name="_id" value=<%= result._id%> hidden>
+                <br>
+                Student Id:<input type="text" name="Sid"  class="form-control" value=<%=result.Sid%> disable><br/>
+                Student Name:<input type="text" name="Sname"  class="form-control" value=<%=result.Sname%> <br/><br/>
+                Gender:<br>
+                <input type="radio" name="Gender" class="radio" value="Male" <% if(result.Gender =='Male') {%>checked<%}%> >
+                Male
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Gender" class="radio" value="Female" <% if(result.Gender =='Female') {%>checked<%}%>>
+                Female
+                <br>
+                City:<input type="text" name="City"  class="form-control" value=<%=result.City%>><br/>
+                <input type="submit" name="s1" class="btn btn-primary" value="Save" /><br/>
+
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

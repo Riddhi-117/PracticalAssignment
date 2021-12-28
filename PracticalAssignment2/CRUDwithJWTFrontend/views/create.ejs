@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CRUD Node.js </title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<div class="pt-5">  
+    <div class="container">  
+        <div class="row">  
+            <div class="col-md-5 mx-auto">  
+          
+            <form method="post" action="/students/create" class="modal-body">
+                <br>
+                Student Id:<input type="text" name="Sid" class="form-control" placeholder="Enter Student Id" required><br/>
+                Student Name:<input type="text" name="Sname"  class="form-control"placeholder="Enter Student Name" required> <br/>
+                Gender:<br/>
+                <input type="radio" name="Gender" value="Male"  class="radio">Male &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Gender" value="Female" class="radio">Female<br/><br>
+                City:<input type="text" name="City" class="form-control" placeholder="Enter City"><br/>
+                <a class="btn btn-secondary" href="/students/home">Cancel</a> 
+                <input type="submit" name="s1" value="Submit" class="btn btn-primary"/><br/>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+<html></html>

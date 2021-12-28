@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=7nafaH9SddU
+https://www.youtube.com/watch?v=6ZCU4QetVTs
+https://www.youtube.com/watch?v=h4xY96KpdL0
+
+https://jasonwatmore.com/post/2018/08/06/nodejs-jwt-authentication-tutorial-with-example-api

@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <title>File Upload </title>
+   </head>
+
+   <body>
+      <h3>Single File Upload:</h3>
+      <form action = "/single_file_upload" method = "POST"  enctype = "multipart/form-data">
+         Select a file to upload: <br />
+           <input type="file" name="singleFile" size="500" />
+           
+            <input type = "submit" value = "Upload " />
+      </form>
+      <br>
+      <br>
+      <hr/>    
+      <br>
+      <br>
+     <h3>Mulptiple File Upload:</h3>
+     <form action = "/multiple_file_upload" method = "POST" enctype = "multipart/form-data">
+        Select multiple files to upload: <br />
+            <input type="file" name="multipleFile" size="500" multiple="multiple"/>
+            <input type = "submit" value = "Upload " />
+     </form>
+   </body>
+</html>

@@ -1,0 +1,10 @@
+<form [formGroup]="myForm" (ngSubmit)="select()">
+<label>Message : </label>
+<input type="text" formControlName="textMessage"/> 
+<button type="submit">send</button>
+</form>
+<br>
+<div *ngFor="let item of value">
+<p>Message : {{item[0]}}</p>
+<p>Reply : {{item[1]}}</p>
+</div>
