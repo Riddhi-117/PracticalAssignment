@@ -1,0 +1,22 @@
+{
+  "name": "practical_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "DigitalClock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "cricket-api-node": "^1.0.2",
+    "dgram": "^1.0.1",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "https": "^1.0.0",
+    "jsdom": "^17.0.0",
+    "nodemon": "^2.0.12",
+    "socket.io": "^4.1.3"
+  }
+}
